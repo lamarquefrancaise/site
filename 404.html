@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site en construction — La Marque Française</title>
+<meta name="description" content="🇫🇷 La Marque Française arrive bientôt. Le futur annuaire des marques françaises made in France : mode, épicerie, beauté, bijoux, maison et plus.">
+<meta name="robots" content="noindex, follow">
+<meta name="author" content="La Marque Française">
+<meta name="theme-color" content="#0d1b3e">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0d1b3e;--gold:#b8963e;--gold-l:#d4af6a;--gold-d:#745300;
+  --cream:#f9f6f0;--cream-d:#f2ede4;--white:#fff;
+  --muted:#424E66;--border:#e5e0d5;--text:#1a1a2e;
+  --muted-l:#AFAFAF;--text-l:#9EA8BC;
+}
+html,body{height:100%;width:100%;overflow:hidden}
+body{font-family:Arial,sans-serif;background:var(--navy);color:var(--white);display:flex;align-items:center;justify-content:center;position:relative;padding:1.5rem;}
+body::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(184,150,62,.05) 59px,rgba(184,150,62,.05) 60px);pointer-events:none;}
+body::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.construction{position:relative;z-index:1;max-width:640px;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;}
+.logo{font-family:Georgia,'Times New Roman',serif;color:var(--white);font-size:1.05rem;letter-spacing:.15em;font-weight:normal;margin-bottom:2rem;}
+.logo span{color:var(--gold-l)}
+.flag{display:flex;gap:6px;margin-bottom:1.5rem;}
+.flag span{display:block;width:4px;height:42px;border-radius:2px;}
+.flag-b{background:#0055a4}
+.flag-w{background:#fff}
+.flag-r{background:#ef4135}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(184,150,62,.5);color:var(--gold-l);font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;padding:.35rem 1rem;margin-bottom:1.5rem;}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.8rem,5vw,3.2rem);color:var(--white);font-weight:normal;line-height:1.2;letter-spacing:.02em;margin-bottom:.75rem;}
+h1 em{color:var(--gold-l);font-style:normal;}
+.divider{width:48px;height:2px;background:var(--gold);margin:1.25rem 0;}
+.sub{font-family:Arial,sans-serif;font-size:clamp(.9rem,2vw,1.05rem);color:rgba(255,255,255,.6);line-height:1.7;max-width:480px;margin-bottom:2rem;}
+.progress{width:100%;max-width:320px;height:2px;background:rgba(255,255,255,.08);position:relative;overflow:hidden;margin-bottom:2rem;}
+.progress-bar{position:absolute;top:0;left:0;height:100%;width:40%;background:linear-gradient(90deg,transparent,var(--gold-l),transparent);animation:slide 2.2s ease-in-out infinite;}
+@keyframes slide{
+  0%{left:-40%}
+  100%{left:100%}
+}
+.note{font-family:Arial,sans-serif;font-size:.72rem;letter-spacing:.08em;color:rgba(255,255,255,.4);}
+.note span{color:var(--gold-l)}
+@media (max-width:480px){body{padding:1rem}.flag span{height:34px}.eyebrow{font-size:.65rem;padding:.3rem .8rem;letter-spacing:.2em}.progress{max-width:240px}}
+@media (max-height:500px){.flag{margin-bottom:1rem}.eyebrow{margin-bottom:1rem}h1{font-size:clamp(1.4rem,4vw,2.2rem)}.divider{margin:.75rem 0}.sub{margin-bottom:1.25rem;font-size:.85rem}.progress{margin-bottom:1.25rem}}
+</style>
+<link rel="icon" href="/img/favicon.ico" sizes="32x32">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="canonical" href="https://lamarquefrancaise.fr">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Marque Française">
+<meta property="og:title" content="Site en construction — La Marque Française">
+<meta property="og:description" content="🇫🇷 La Marque Française arrive bientôt. Le futur annuaire des marques françaises made in France.">
+<meta property="og:url" content="https://lamarquefrancaise.fr">
+<meta property="og:image" content="https://lamarquefrancaise.fr/img/1200x630/la-marque-francaise.webp">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<main class="construction" role="main">
+  <p class="logo">La <span>Marque</span> Française</p>
+
+  <div class="flag" aria-hidden="true">
+    <span class="flag-b"></span>
+    <span class="flag-w"></span>
+    <span class="flag-r"></span>
+  </div>
+
+  <div class="eyebrow">🇫🇷 Bientôt en ligne</div>
+
+  <h1>Le site est en <em>construction</em></h1>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <p class="sub">Nous préparons l'annuaire de référence des marques françaises made in France. Mode, épicerie, beauté, bijoux, maison et bien plus — rendez-vous très prochainement.</p>
+
+  <div class="progress" role="progressbar" aria-label="Progression du chantier" aria-valuetext="Travaux en cours">
+    <div class="progress-bar" aria-hidden="true"></div>
+  </div>
+
+  <p class="note">Merci de votre patience · <span>Lancement imminent</span></p>
+</main>
+</body>
+</html>
